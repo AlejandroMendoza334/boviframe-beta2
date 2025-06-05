@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOVIFrame</title>
+  <link rel="icon" type="image/png" href="logo1.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+  <!-- Favicon y otros meta tags -->
+</head>
+<body>
+  <!-- Firebase SDK (versión compatibilidad) -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script> <!-- Opcional -->
+
+  <script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyA_p6oh21sUJAT6cRYM1h7rMxWgdaPL_54",
+    authDomain: "boviframe.firebaseapp.com",
+    databaseURL: "https://boviframe-default-rtdb.firebaseio.com", // URL correcta
+    projectId: "boviframe",
+    storageBucket: "boviframe.firebasestorage.app",
+    messagingSenderId: "141125428871",
+    appId: "1:141125428871:web:f22303ed9b6ae200867a22",
+    measurementId: "G-VYRFTYTM13"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+  
+
+  <!-- Script de Flutter (DEBE ir después de Firebase) -->
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
